@@ -260,7 +260,7 @@ class _FeatureLayerState extends State<FeatureLayer> {
 //       var URL =
 //           '${widget.options.url}/query?f=json&geometry={"spatialReference":{"wkid":4326},${bounds_}}&maxRecordCountFactor=30&outFields=*&outSR=4326&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=1=1&geometryType=esriGeometryEnvelope';
       
-      var URL = '${widget.options.url}f=json&geometry={"spatialReference":{"wkid":4326},${bounds_}}&maxRecordCountFactor=30&outFields=*&outSR=4326&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=1=1&geometryType=esriGeometryEnvelope';
+      var URL = '${widget.options.url}f=json&geometry={"spatialReference":{"wkid":4326},${bounds_}}&maxRecordCountFactor=100&outFields=*&outSR=4326&resultType=tile&returnExceededLimitFeatures=false&spatialRel=esriSpatialRelIntersects&where=1=1&geometryType=esriGeometryEnvelope';
       
       Response response = await Dio().get(URL);
 
